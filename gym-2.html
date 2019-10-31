@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.ico" type="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>彰化健身房</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+
+        }
+
+        header {
+            background-color: rgb(51, 39, 23);
+        }
+
+        .logo img {
+            min-width: 50px;
+            height: 68px;
+            float: left;
+        }
+
+        .main_nav {
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        nav .nav_links {
+            float: right;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav .nav_links .nav_link {
+            color: #eee;
+            list-style: none;
+            display: inline-block;
+            padding: 25px 20px;
+        }
+
+        nav .nav_links .nav_link:hover {
+            background-color: rgba(250, 250, 250, 0.5);
+        }
+
+        #section_all {
+            max-width: 1920px;
+            height: 200vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper_all {
+            max-width: 100%;
+            height: 800px;
+            background-color: rgb(16, 120, 128);
+            position: relative;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .about_all {
+            width: 100%;
+            height: 450px;
+            background-color: rgb(110, 105, 105);
+
+
+        }
+
+
+        .about_all .about_title {
+            width: 350px;
+            font-size: 60px;
+            margin: 0;
+            margin-top: 20px;
+            margin-left: 50%;
+            padding: 0px;
+        }
+
+        .about_all .about_text {
+            width: 920px;
+            height: 180px;
+            margin-left: 500px;
+            margin-top: 65px;
+
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        .text_1 {
+            line-height: 35px;
+        }
+
+        .avater_box {
+            width: 400px;
+            height: 600px;
+            float: left;
+
+
+        }
+
+        .avater_textall {
+            width: 750px;
+            height: 280px;
+            background-color: rgb(150, 133, 133);
+            float: left;
+            margin-top: 300px;
+
+        }
+
+        #main_all {
+            max-width: 1920px;
+            height: 200vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(27, 170, 14);
+
+
+        }
+
+        .main_left {
+            width: 50%;
+            height: 960px;
+            background-color: rgb(216, 25, 25);
+            float: left;
+
+
+        }
+
+        .main_right {
+            width: calc(50% - 101px);
+            height: 960px;
+            float: right;
+            background-color: rgb(61, 214, 41);
+
+
+        }
+
+        .tool_all {
+            width: 100%;
+            height: 1400px;
+            float: right;
+            margin-top: 50px;
+            background-image: url("img/sweat.png");
+            background-size: cover;
+
+        }
+
+        .tool_all h1 {
+            width: 300px;
+            height: 60px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+
+        }
+        .tool_all h1::before{
+            content: "";
+            display: block;
+            width: 150px;
+            height: 5px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: calc(50% - 10px);
+            left: -80px;
+            
+            
+        }
+        .tool_all h1::after{
+            content: "";
+            display: block;
+            width: 150px;
+            height: 5px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: calc(50% - 10px);
+            left: 230px;
+        }
+
+        .tool_card {
+            max-width: 1170px;
+            height: calc(1400px - 60px);
+
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card_total {
+            width: calc((1170px / 3) - 60px);
+            height: 400px;
+            margin-top: 30px;
+            background-color: rgb(162, 238, 111);
+
+        }
+
+
+        .card_total img {
+            width: 100%;
+            height: 350px;
+        }
+
+        .card_total p {
+            text-align: center;
+
+        }
+
+        #main_second {
+            max-width: 1920px;
+            height: 1130px;
+            background-color: rgb(174, 212, 34);
+            margin: 0 auto;
+
+
+        }
+
+        .list_box {
+            width: 200px;
+            height: 80px;
+            background-color: rgb(206, 36, 36);
+            float: left;
+        }
+
+
+        .list_box h1 {
+
+            color: floralwhite;
+
+        }
+       
+
+
+
+        #end_all {
+            max-width: 1920px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #DA6316;
+            position: relative;
+            margin-top: 1000px;
+
+        }
+
+        .footer_all {
+            width: 830px;
+            height: 250px;
+            background-color: rgb(206, 163, 163);
+            position: absolute;
+            left: calc((1920px - 830px) / 2);
+            top: calc((400px - 250px) / 2);
+
+
+
+        }
+
+        .footer_all img {
+            width: 250px;
+        }
+
+        .icon_box {
+            position: absolute;
+            top: 80px;
+            left: 830px;
+
+
+        }
+
+        .icon_box img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer_text{
+            width: 350px;
+            height: 250px;
+            position: absolute;
+            left: 800px;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-2.png" alt=""></div>
+
+            <nav class="main_nav">
+                <ul class="nav_links">
+                    <li class="nav_link">最新消息</li>
+                    <li class="nav_link">關於健身房</li>
+                    <li class="nav_link">聯絡我們</li>
+                    <li class="nav_link">預約參觀/人才招募</li>
+                </ul>
+
+            </nav>
+        </div>
+        <div style="clear: both;"></div>
+
+    </header>
+
+    <section id="section_all">
+
+        <div class="swiper_all">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./img/02.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/03.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/04.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/05.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/06.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+
+            <div class="about_all">
+                <h1 class="about_title">關於健身房</h1>
+                <ul class="about_text">
+                    <li class="text_1">
+                        彰化健身創辦人張順堅總教練為1988年「韓國首爾-漢城奧運」的舉重明星選手，
+                        在70年代更被封為「破紀錄大王」起初張教練致力於推廣運動
+                        ，於1990年 設立美力健身，培養無數俱樂部金牌教練，國手。
+                        期望能貫徹全民健身的理念，讓男女老少都能夠培養運動習慣以及擁有健康的生活。
+                        現階段美力開始轉型，專注於打造專業，舒適，優良且有保障的運動環境。
+                        張教練創立的健身事業，秉持誠信，永續經營的企業理念，並且始終如一，
+                        讓每位顧客都能在這裡學習運動專業，同時也能安全，安心的享受健康。
+
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-left: 390px">
+                <img class="avater_box" src="img/01.jpg" alt="">
+                <div class="avater_textall">
+                    <h2 style="font-size: 20px">創辦人</h2>
+                    <ul>
+                        <li style="font-size: 35px"> 張順堅總教練</li>
+                        <li>經歷</li>
+                        <li>(1奧運舉重國手</li>
+                        <li>(2)墨爾本世界舉重錦標賽銀牌</li>
+                        <li>(3)打破舉重全國紀錄28次</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+    </section>
+    <main id="main_all">
+        <div class="main_left">
+            <h1>收費方式</h1>
+            <ul>
+                <li>活動優惠: 1年 $4900 三個月1800元（每天不到20元）</li>
+                <li>以上方案都不限使用次數 不需要收其他費用~</li>
+                <li>免入會費 清潔費 月費...等費用!!!</li>
+                <li>送日本原裝進口TANITA體脂測量乙次</li>
+                <li> 送一對一私人教練檢測諮詢課程乙堂（採預約制）</li>
+                <li>不限時間、</li>
+                <li>不限次數、</li>
+                <li>不限時段使用</li>
+                <li>運動不用趕時間！</li>
+                <li>世界頂級#CYBEX#器材</li>
+            </ul>
+            <img src="img/315.png" alt="">
+        </div>
+
+        <div class="main_right">
+            <img class="main_r_pic" src="img/new-1.jpg" alt="">
+        </div>
+
+        <div class="tool_all">
+            <h1>設備介紹</h1>
+            <div class="tool_card">
+                <div class="row">
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/17.jpg" alt="">
+                        </div>
+                        <p>1.跑步機 Treadmill</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/18.jpg" alt="">
+                        </div>
+                        <p>2.滑步機 Ellipticals</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/19.jpg" alt="">
+                        </div>
+                        <p>3.飛輪 Stationary bike</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/20.jpg" alt="">
+                        </div>
+                        <p>4.划船機 Rowing machine</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/26.jpg" alt="">
+                        </div>
+                        <p>1.大腿推蹬機 Leg press</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/28.jpg" alt="">
+                        </div>
+                        <p>2.雙腿伸屈Leg Extension</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/23.jpg" alt="">
+                        </div>
+                        <p>3.仰臥推舉 Bench press</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/22.jpg" alt="">
+                        </div>
+                        <p>4.滑輪下拉 Lat pulldown</p>
+                    </div>
+                    <div class="card_total">
+                        <div class="pic">
+                            <img src="img/25.jpg" alt="">
+                        </div>
+                        <p>5.引體向上 Pull-up</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <main id="main_second">
+        <div class="list_box">
+            <h1>專業瑜珈教室</h1>
+        </div>
+
+        <div class="yoga_box">
+            <img src="img/Yoga_Pic_v2.jpg" alt="">
+        </div>
+        .yoga_
+
+    </main>
+
+
+    <footer id="end_all">
+        <div class="footer_all">
+            <img src="img/16.jpg" alt="">
+        </div>
+
+        <div class="icon_box">
+            <img src="img/22.png" alt="">
+            <img src="img/19.png" alt="">
+            <img src="img/21.jpg" alt="">
+            <img src="img/18.png" alt="">
+        </div>
+
+        <ul class="footer_text">
+            <li> 聯絡電話：04-726 7760</li>
+            <li>營業時間：週一～週六 、 上午9:00～下午11:00</li>
+            <li>其他資訊：<a href="http://www.merrygym.com.tw/html/">http://www.merrygym.com.tw/html/</a> </li>
+            <li>Copyrights © 2019 Chang Hua Gym / All rights reserved. </li>
+        </ul>
+
+
+
+    </footer>
+    <!-- Swiper JS -->
+    <script src="../package/js/swiper.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+
+</html>

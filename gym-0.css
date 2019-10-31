@@ -1,0 +1,446 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#header_all {
+    max-width: 100%;
+    height: 150px;
+    background-color: #E8802E;
+
+}
+
+.nav_w1170 {
+    width: 1170px;
+    height: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+
+}
+
+.logo img {
+    width: 150px;
+
+}
+
+.main_nav {
+    width: calc(1170px / 2);
+    height: 150px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav .nav_links {
+    width: 500px;
+    height: 100px;
+
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 25px;
+    left: calc(((1170px / 2) - 500px) / 2);
+}
+
+nav .nav_links .nav_link {
+    text-align: center;
+    display: inline-block;
+    padding: 60px 10px;
+    cursor: pointer;
+    
+
+
+}
+
+nav .nav_links .nav_link:hover {
+    color: rgb(228, 205, 205);
+    font-size: larger;
+}
+
+
+#main_first {
+    max-width: 100%;
+    height: 2000px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 800px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.about_all {
+    width: 100%;
+    height: 450px;
+    background-color: lightblue;
+    float: right;
+    position: relative;
+}
+
+.about_all h1 {
+    text-align: center;
+}
+
+.about_all p {
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    width: 920px;
+    height: 176px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.about_all2 {
+    width: 100%;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.about_all2_list {
+    width: 750px;
+    height: 280px;
+    background-color: #DCDDDD;
+    position: absolute;
+    top: 750px;
+    left: 790px;
+    margin: 0;
+    padding: 0;
+}
+.about_all2_list ul{
+    margin: 0;
+    padding: 0;                                       
+    margin-left: 180px;
+    
+    
+}
+.ul_list_a .list_2{
+    font-size: 50px;
+
+}
+
+.about_all2_list ul li{
+    line-height: 45px;
+    
+}
+
+.about_all2 img {
+    width: 400px;
+    height: 600px;
+    margin-top: 75px;
+    margin-left: 390px;
+}
+
+
+
+#main_second {
+    max-width: 100%;
+    height: 3060px;
+    background-color: rgb(228, 127, 127);
+
+}
+
+.main_se_l {
+    width: 50%;
+    height: 960px;
+    background-color: lightblue;
+    float: left;
+     
+
+}
+.main_se_l_top{
+    width: 50%;
+    height: 480px;
+   
+    margin-left: 390px;
+ 
+
+}
+.main_se_l_top h1{
+    text-align: center;
+}
+.main_se_l_top li{
+    line-height: 30px;
+}
+.main_se_l_down{
+    margin-left: 390px;
+}
+
+.main_se_l img{
+    width: 400px;
+    height: 400px;
+}
+
+.main_se_r {
+    width: 50%;
+    height: 960px;
+    float: left;
+}
+
+.main_se_tittle {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(252, 252, 252);
+    float: left;
+}
+
+.main_se_tittle h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 0;
+    margin-top: 80px;
+    position: relative;
+
+
+}
+
+.main_se_tittle h1::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 5px;
+    background-color: black;
+
+    position: absolute;
+    top: 30px;
+    left: 480px;
+
+
+}
+
+.main_se_tittle h1::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    left: 1100px;
+}
+
+.tool_box {
+    width: 100%;
+    height: 1800px;
+    background-image: url("img/sweat.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.tool_box.tool_card {
+    max-width: 1170px;
+
+    margin: 0 auto;
+}
+
+
+.tool_card {
+    max-width: 1170px;
+    height: 1700px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card_total {
+    width: calc((1170px / 3) - 60px);
+    height: 400px;
+    margin-top: 30px;
+    background-color: rgb(162, 238, 111);
+
+}
+
+
+.card_total img {
+    width: 100%;
+    height: 350px;
+}
+
+.card_total p {
+    text-align: center;
+
+}
+
+
+
+
+#main_third {
+    max-width: 100%;
+    height: 2340px;
+    background-color: hotpink;
+}
+
+.yoga_tittle {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+}
+
+.yoga_tittle_bolck {
+    width: 300px;
+    height: 60px;
+    background-color: #EA5956;
+
+}
+
+.yoga_tittle_bolck p {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+
+}
+
+.yoga_content {
+    width: 100%;
+    height: 960px;
+    background-color: #92C4D6;
+    position: relative;
+}
+
+.yoga_content .swiper-container {
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.yoga_content .yoga_pic {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+.yoga_content_h1{
+    
+    font-size: 60px;
+}
+
+
+.view_block {
+    width: 100%;
+    height: calc(100vh + 830px);
+    
+    margin-top: 1000px;
+    display: flex;
+    justify-content: space-around;
+   
+  
+}
+
+
+.view_block_card p{
+    text-align: center;
+}
+
+.view_block img{
+    width: 800px;
+    height: 600px;
+   
+}
+
+
+#main_fifth {
+    max-width: 100%;
+    height: 2080px;
+    background-color: rgb(27, 97, 177);
+
+}
+.main_fifth_picbox{
+    width: 100%;
+    height: 1280px; 
+   position: relative;
+ 
+}
+#main_fifth img {
+    width: 100%;
+    height: 100%;  
+}
+.tel_box{
+    width: 500px;
+    height: 520px;
+    background-color: #FAD0AA;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+   
+}
+.tel_box_h1 {
+
+    text-align: center;
+  
+}
+.tel_box ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;  
+   
+
+}
+
+
+
+.map_box{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+.map_box h1{
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+#footer_all {
+    max-width: 100%;
+    height: 200px;
+    background-color: #DA6316;
+    margin-top: 45px;
+}
+.footer_w1170_l{
+    width: 50%;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+}
+.footer_w1170_l img{
+    width: 100px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.footer_w1170_r{
+    width: 50%;
+    height: 200px;
+    background-color: rgb(154, 224, 24);
+    float: right;
+   
+}
+.footer_w1170_r ul li{
+    line-height: 40px;
+
+}

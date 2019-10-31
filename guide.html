@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            border: 1px solid #000;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .loadPage {
+            width: 100%;
+            height: 100vh;
+            transition-duration: 1s;
+            position: relative;
+
+
+        }
+
+        .loadPage.complete {
+            opacity: 0;
+        }
+
+        .loadbar {
+            width: 400px;
+            height: 30px;
+            border: 1px solid #000;
+            margin-bottom: 0;
+        }
+        .loading_text{
+            margin-bottom: 0;
+        }
+
+        .loading {
+            width: 100%;
+            height: 24px;
+            margin-top: 3px;
+            background-color: #22e;
+        }
+
+        .nav_all {
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/back-07.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            
+        }
+
+        .nav_all .logo_pic {
+            position: absolute;
+            left: calc((100% - 1920px) / 2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loadPage">
+        <div class="nav_all">
+            <!-- <img class="logo_pic" src="img/layot-07.png" alt=""> -->
+            <div class="loadbar">
+                <div class="loading"></div>
+            </div>
+            <h2 class="loadText">0%</h2>
+        </div>
+    </div>
+    <script>
+        //先抓到畫面上要做動作的元件
+        var _loading = document.querySelector(".loading");
+        var _loadText = document.querySelector(".loadText");
+        var _loadPage = document.querySelector(".loadPage");
+
+        var percent = 0;
+
+        function load() {
+            percent++;
+
+            if (percent === 100) {
+                clearInterval(loadTimer);
+                _loadPage.classList.add("complete");
+
+                setTimeout(function () {
+                    _loadPage.style.display = "none";
+                }, 1500);
+            }
+
+            _loading.style.width = percent + "%";
+            _loadText.innerText = percent + "%";
+        }
+
+        var loadTimer = setInterval(load, 100);
+    </script>
+
+</body>
+
+</html>
